@@ -28,3 +28,6 @@ def productFib_kata(prod):
     while prod > a * b:
         a, b = b, a + b
     return [a, b, prod == a * b]
+
+
+print(fibonacci(5))
