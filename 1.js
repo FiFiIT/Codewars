@@ -17,13 +17,17 @@ function comp2(a, b) {
   );
 }
 
-const comp3 = (array1, array2) =>
+const comp3 = (array1, array2) => {
   Array.isArray(array1) &&
-  Array.isArray(array2) &&
-  array1.every((item) => {
-    const index = array2.indexOf(Math.pow(item, 2));
-    return index > -1 ? array2.splice(index, 1) : false;
-  });
+    Array.isArray(array2) &&
+    array1.every((item) => {
+      const index = array2.indexOf(Math.pow(item, 2));
+      return index > -1 ? array2.splice(index, 1) : false;
+    });
+};
 
 a = [121, 144, 19, 161, 19, 144, 19, 11];
 b = [121, 14641, 20736, 361, 25921, 361, 20736, 361];
+
+var result = comp1(a, b);
+console.log(result);
