@@ -1,5 +1,5 @@
 var assert = require("assert");
-var test = require("../Scripts/5");
+var test = require("../Scripts/digitPower");
 
 describe("Playing with digits", () => {
   it("Should return 2", () => {

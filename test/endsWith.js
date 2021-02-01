@@ -1,5 +1,5 @@
 var assert = require("assert");
-var test = require("../Scripts/4");
+var test = require("../Scripts/endsWith");
 
 describe("String ends with?", () => {
   it("abcde end with cde", () => {

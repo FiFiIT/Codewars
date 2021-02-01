@@ -1,5 +1,5 @@
 var assert = require("assert");
-var test = require("../Scripts/3");
+var test = require("../Scripts/longestConsec");
 
 describe("longestConsec", function () {
   describe("Basic tests", function () {

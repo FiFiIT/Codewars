@@ -1,5 +1,5 @@
 var assert = require("assert");
-var test = require("../Scripts/7");
+var test = require("../Scripts/printerError");
 
 describe("Printer Errors", () => {
   it("Basic Tests", () => {

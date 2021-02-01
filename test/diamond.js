@@ -1,5 +1,5 @@
 var assert = require("assert");
-var test = require("../Scripts/8");
+var test = require("../Scripts/diamond");
 
 describe("Give me a Diamond", () => {
   it("Should give me diamond", () => {
