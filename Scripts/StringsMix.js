@@ -40,10 +40,10 @@ const mix = (s1, s2) => {
         alpha.rank = v.id.charCodeAt();
       } else if (v.s1 > v.s2) {
         alpha.desc = "1:";
-        alpha.rank = v.id.charCodeAt() + 200;
+        alpha.rank = v.id.charCodeAt() - 200;
       } else {
         alpha.desc = "2:";
-        alpha.rank = v.id.charCodeAt() + 100;
+        alpha.rank = v.id.charCodeAt() - 100;
       }
       acc.push(alpha);
       return acc;
@@ -53,7 +53,7 @@ const mix = (s1, s2) => {
   abc = abc.sort((a, b) => {
     var result = b.value - a.value;
     if (result == 0) {
-      result = b.rank - a.rank;
+      result = a.rank - b.rank;
     }
     return result;
   });
@@ -87,7 +87,7 @@ function updateABC(letter, arr, s1 = true) {
   });
 }
 
-var result = mix("looping is fun but dangerous", "less dangerous than coding");
+var result = mix("Are they here", "yes, they are here");
 console.log(result);
 
 exports.mix = mix;
