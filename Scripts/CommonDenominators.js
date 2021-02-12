@@ -30,6 +30,10 @@
     return arr.map(([n, d]) => `(${(n * cd) / d},${cd})`).join("");
   }
 }
+
+var result = gcd(30, 36);
+console.log(result);
+
 //KATA 2
 {
   function gcd(a, b) {
@@ -370,5 +374,5 @@ function print(lst) {
   }, "");
 }
 
-var result = convertFrac("");
-console.log(result);
+// var result = convertFrac("");
+// console.log(result);
