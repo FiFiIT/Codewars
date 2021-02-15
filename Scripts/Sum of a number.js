@@ -42,5 +42,8 @@ function sum_KATA(n, m = n) {
   return total;
 }
 
-var result = sum(10);
+// var result = sum(10);
+// console.log(result);
+
+var result = sum_KATA(5);
 console.log(result);
